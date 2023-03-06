@@ -1,2 +1,7 @@
 node_modules
 .DS_Store
+.idea/
+dist/assets/
+dist/css
+dist/js
+dist/index.html

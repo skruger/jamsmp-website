@@ -20,11 +20,8 @@ jobs:
         run: npm install
       - run: npm run build
 
-      - name: Generate artifact
-        run: cd dist && zip -r ../dist.zip .
-
       - uses: actions/upload-artifact@v3
         with:
-          name: jamsmp-site
-          path: dist.zip
+          name: JamSMP-website
+          path: dist/
           retention-days: 30

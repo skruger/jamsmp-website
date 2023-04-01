@@ -53,4 +53,4 @@ jobs:
         shell: bash
         run: echo "branch=$(echo ${GITHUB_REF#refs/heads/})" >>$GITHUB_OUTPUT
         id: extract_branch
-      - run: aws s3 sync . s3://${{ env.BUCKET_NAME }}/${{ steps.extract_branch.outputs.branch }}/
+      - run: aws s3 sync --acl public-read --no-progress . s3://${{ env.BUCKET_NAME }}/${{ steps.extract_branch.outputs.branch }}/

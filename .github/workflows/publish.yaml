@@ -2,6 +2,10 @@ name: JamSMP Publish
 
 on: workflow_dispatch
 
+env:
+  AWS_REGION: us-west-2
+  BUCKET_NAME:
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -10,5 +14,14 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: JamSMP-website
-
+      - uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: arn:aws:iam::046476997299:role/Jams-Github-Actions-Role-JamsDeployRole-5RO3AA892JY1
+          role-session-name: "jamsmp-website-action-publish"
+          aws-region: ${{ env.AWS_REGION }}
       - run: find .
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=$(echo ${GITHUB_REF#refs/heads/})" >>$GITHUB_OUTPUT
+        id: extract_branch
+      - run: aws s3 sync . s3://${{ env.BUCKET_NAME }}/${{ steps.extract_branch.outputs.branch }}/

@@ -35,11 +35,11 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') Portfolio
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#rules') Rules
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#discord') Discord
 
         // Masthead
         header.masthead.bg-primary.text-white.text-center
@@ -57,61 +57,90 @@ html(lang='en')
                 // Masthead Subheading
                 p.masthead-subheading.font-weight-light.mb-0 Build - Farm - Redstone
 
-        // Portfolio Section
-        section#portfolio.page-section.portfolio
+        section#rules.page-section.portfolio
             .container
-                // Portfolio Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
-                // Icon Divider
-                .divider-custom
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
-                    .divider-custom-line
-                // Portfolio Grid Items
-                .row.justify-content-center
-                    // Portfolio Item 1
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cabin.png', alt='...')
-                    // Portfolio Item 2
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cake.png', alt='...')
-                    // Portfolio Item 3
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/circus.png', alt='...')
-                    // Portfolio Item 4
-                    .col-md-6.col-lg-4.mb-5.mb-lg-0
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/game.png', alt='...')
-                    // Portfolio Item 5
-                    .col-md-6.col-lg-4.mb-5.mb-md-0
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/safe.png', alt='...')
-                    // Portfolio Item 6
-                    .col-md-6.col-lg-4
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/submarine.png', alt='...')
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mp-0 Rules
+            .row
+                .col-lg-4.ms-auto
+                    p.lead Here are the rules (the numbers at the end indicate the number of warnings given):
+                    ol
+                        li No griefing - destroying or disfiguring builds that you do not own. (1-3)
+                        li No stealing - taking/using other's or unmarked items, pets, and farms without asking. (1-3)
+                        li
+                            | No hacking or seed grabbing - for a historical list of allowed client mods
+                            a(href="https://pridelandsmc.fandom.com/wiki/Allowed_Client_Mods") visit the old Pridelands MC Wiki
+                            | . (2-4)
+                        li No killing without agreement - whether it be by unwarranted PvP or traps. Both parties should agree to any fight. (1-2)
+                        li No excessive entities or unnecessary tiles - such as villagers, cows, hoppers, and furnaces. (1-4)
+                        li No discrimination or slurs - based on unchangeable characteristics. (1-2)
+                        li No advertising - other servers, discords, websites, or social media pages. (1)
+                        li No NSFW or scams - anywhere. (2-4)
+                        li Respect others - by not harassing, begging, annoying, insulting, or bullying them. This applies to builds as well as chat. (1-2)
+                        li Keep your base open - allowing peaceful players to visit your base is part of the point of Jams. (1)
+                        li Be respectful on Discord and during events - do not spam, follow the ToS, and keep serious channels clean. (1)
+
+
+                .col-lg-4.me-auto
+                    p.lead If you break the rules as soon as you join, leave the server, or break the rules to an extreme extent, you will be banned without warning or question, regardless of what was broken. You must remain in the Discord to keep your place on the server.
+                    p.lead We do not police DMs on this server unless the offender is blatantly breaking ToS.
+                    // For the full detailed rules, please visit our website at https://pridelandsmc.fandom.com/wiki/Rules.
+                    p.lead We will always enforce the ToS and Community Guidelines, as well as the Minecraft EULA.
+
+        // Portfolio Section
+        //section#portfolio.page-section.portfolio
+        //    .container
+        //        // Portfolio Section Heading
+        //        h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
+        //        // Icon Divider
+        //        .divider-custom
+        //            .divider-custom-line
+        //            .divider-custom-icon
+        //                i.fas.fa-star
+        //            .divider-custom-line
+        //        // Portfolio Grid Items
+        //        .row.justify-content-center
+        //            // Portfolio Item 1
+        //            .col-md-6.col-lg-4.mb-5
+        //                .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
+        //                    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+        //                        .portfolio-item-caption-content.text-center.text-white
+        //                            i.fas.fa-plus.fa-3x
+        //                    img.img-fluid(src='assets/img/portfolio/cabin.png', alt='...')
+        //            // Portfolio Item 2
+        //            .col-md-6.col-lg-4.mb-5
+        //                .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
+        //                    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+        //                        .portfolio-item-caption-content.text-center.text-white
+        //                            i.fas.fa-plus.fa-3x
+        //                    img.img-fluid(src='assets/img/portfolio/cake.png', alt='...')
+        //            // Portfolio Item 3
+        //            .col-md-6.col-lg-4.mb-5
+        //                .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
+        //                    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+        //                        .portfolio-item-caption-content.text-center.text-white
+        //                            i.fas.fa-plus.fa-3x
+        //                    img.img-fluid(src='assets/img/portfolio/circus.png', alt='...')
+        //            // Portfolio Item 4
+        //            .col-md-6.col-lg-4.mb-5.mb-lg-0
+        //                .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
+        //                    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+        //                        .portfolio-item-caption-content.text-center.text-white
+        //                            i.fas.fa-plus.fa-3x
+        //                    img.img-fluid(src='assets/img/portfolio/game.png', alt='...')
+        //            // Portfolio Item 5
+        //            .col-md-6.col-lg-4.mb-5.mb-md-0
+        //                .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
+        //                    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+        //                        .portfolio-item-caption-content.text-center.text-white
+        //                            i.fas.fa-plus.fa-3x
+        //                    img.img-fluid(src='assets/img/portfolio/safe.png', alt='...')
+        //            // Portfolio Item 6
+        //            .col-md-6.col-lg-4
+        //                .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
+        //                    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+        //                        .portfolio-item-caption-content.text-center.text-white
+        //                            i.fas.fa-plus.fa-3x
+        //                    img.img-fluid(src='assets/img/portfolio/submarine.png', alt='...')
 
         // About Section
         section#about.page-section.bg-primary.text-white.mb-0
@@ -125,24 +154,56 @@ html(lang='en')
                         i.fas.fa-star
                     .divider-custom-line
                 // About Section Content
+                //.container
+                .row
+                    .col-lg-6.m-auto
+                        p.lead
+                            | Welcome to "Just another minecraft server" or in short, Jams, The Community focused SMP
+
                 .row
                     .col-lg-4.ms-auto
-                        p.lead
-                            | Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+                        h5 Commonly asked questions and answers
+                        ul
+                            li
+                                | Q: Can I use cracked accounts?
+                                br
+                                | A: This server does not support cracked accounts.
+                            li
+                                | Q: Is there land claims, TPA etc?
+                                br
+                                | A: This server does not have these by principle.
+                            li
+                                | Q: Can I dupe?
+                                br
+                                | A: Duping only rails, TNT, carpet and gravity blocks are allowed.
+                            li
+                                | Q: Is hacking, stealing etc allowed?
+                                br
+                                | A: No, see rules.
+                        //h5 Partnered Servers
+                        //
+                        //p.lead LEM is a near perfect port of legacy console editions minigames, which is currently still in development.
+                        //p.lead Right now, you can play Battle, but tumble and glide are in early development.
+                        //p.lead.text-white
+                        //    a(href="https://discord.gg/B9dDtrAKu4").text-white https://discord.gg/B9dDtrAKu4
+
+
                     .col-lg-4.me-auto
-                        p.lead
-                            | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
-                // About Section Button
-                .text-center.mt-4
-                    a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
-                        i.fas.fa-download.me-2
-                        | Free Download!
+                        h5 What is Jams?
+                        p.lead As a server, we try to fill a void in the Minecraft server space, it is an open world vanilla server that is also not anarchy, think Hermitcraft but the players are less famous.
+                        p.load We have no majorly gameplay-altering plugins, including teleportation, playerhomes, no skills system, and no out of game economy.
+                        p.load We also do not allow Staff members to abuse their power and spawn in OP items. They should be just like normal players when not doing staff work.
+                        p.load We are 100% Minecraft EULA complaint and have no pay to win features. While we do have a patreon with many great perks, subscribing to it will not put you at an advantage over others.
+                        p.load We allow all vanilla glitches to be used in game such as TNT duping, bedrock breaking, headless pistons, stasis chambers, composter xraying, infinite zombie villager cures, nether roof travel, and villager trade resetting.
+                        p.load However, we do not allow item duping. The server runs on Purpur (a speedy server) without any dodgy plugins so this is pretty much impossible to do anyway. Carpet, rail, TNT and gravity block duping is considered a vanilla glitch as above and is allowed.
+                        p.load We do our best to ensure your bases and items are safe with efficient moderation, rollback and report systems that replace what land claims would do on a conventional server.
+
 
         // Contact Section
-        section#contact.page-section
+        section#discord.page-section
             .container
                 // Contact Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Join Our Discord
                 // Icon Divider
                 .divider-custom
                     .divider-custom-line
@@ -152,87 +213,9 @@ html(lang='en')
                 // Contact Section Form
                 .row.justify-content-center
                     .col-lg-8.col-xl-7
-
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
-
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
-
-                        form#contactForm(data-sb-form-api-token='API_TOKEN')
-
-                            // Name input
-                            .form-floating.mb-3
-                                input#name.form-control(
-                                    type='text',
-                                    placeholder='Enter your name...',
-                                    data-sb-validations='required'
-                                )
-                                label(for='name') Full name
-                                .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
-
-                            // Email address input
-                            .form-floating.mb-3
-                                input#email.form-control(
-                                    type='email',
-                                    placeholder='name@example.com',
-                                    data-sb-validations='required,email'
-                                )
-                                label(for='email') Email address
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
-
-                            // Phone number input
-                            .form-floating.mb-3
-                                input#phone.form-control(
-                                    type='tel',
-                                    placeholder='(123) 456-7890',
-                                    data-sb-validations='required'
-                                )
-                                label(for='phone') Phone number
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
-
-                            // Message input
-                            .form-floating.mb-3
-                                textarea#message.form-control(
-                                    type='text',
-                                    placeholder='Enter your message here...',
-                                    style='height: 10rem;',
-                                    data-sb-validations='required'
-                                )
-                                label(for='message') Message
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
-
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3 Error sending message!
-
-                            // Submit Button
-                            button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Send
+                        p.lead
+                            | Discord invite:
+                            a(href="https://discord.gg/pridelandsmc-473649389462749195") Click here to join
 
         // Footer
         footer.footer.text-center
@@ -240,42 +223,44 @@ html(lang='en')
                 .row
                     // Footer Location
                     .col-lg-4.mb-5.mb-lg-0
-                        h4.text-uppercase.mb-4 Location
-                        p.lead.mb-0
-                            | 2215 John Daniel Drive
-                            br
-                            | Clark, MO 65243
+                        //h4.text-uppercase.mb-4 Location
+                        //p.lead.mb-0
+                        //    | 2215 John Daniel Drive
+                        //    br
+                        //    | Clark, MO 65243
                     // Footer Social Icons
                     .col-lg-4.mb-5.mb-lg-0
-                        h4.text-uppercase.mb-4 Around the Web
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-facebook-f
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-twitter
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-linkedin-in
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-dribbble
+                        h4.text-uppercase.mb-4 Server IP
+                        p.lead.mb-0 jamsmp-world1.minecraft.best
+                        //a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        //    i.fab.fa-fw.fa-facebook-f
+                        //a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        //    i.fab.fa-fw.fa-twitter
+                        //a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        //    i.fab.fa-fw.fa-linkedin-in
+                        //a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        //    i.fab.fa-fw.fa-dribbble
                     // Footer About Text
                     .col-lg-4
-                        h4.text-uppercase.mb-4 About Freelancer
-                        p.lead.mb-0
-                            | Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            a(href='http://startbootstrap.com') Start Bootstrap
-                            | .
+                        //h4.text-uppercase.mb-4 About Freelancer
+                        //p.lead.mb-0
+                        //    | Freelance is a free to use, MIT licensed Bootstrap theme created by
+                        //    a(href='http://startbootstrap.com') Start Bootstrap
+                        //    | .
 
         // Copyright Section
         div.copyright.py-4.text-center.text-white
             .container
-                small Copyright &copy; Your Website 2022
+                small Published by JamSMP Staff 2023
+                //small Copyright &copy; Your Website 2022
 
         // Portfolio Modals
-        include includes/portfolio-modal-1.pug
-        include includes/portfolio-modal-2.pug
-        include includes/portfolio-modal-3.pug
-        include includes/portfolio-modal-4.pug
-        include includes/portfolio-modal-5.pug
-        include includes/portfolio-modal-6.pug
+        //include includes/portfolio-modal-1.pug
+        //include includes/portfolio-modal-2.pug
+        //include includes/portfolio-modal-3.pug
+        //include includes/portfolio-modal-4.pug
+        //include includes/portfolio-modal-5.pug
+        //include includes/portfolio-modal-6.pug
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
